@@ -21,3 +21,4 @@ function anagrams(stringA, stringB) {
 }
 
 module.exports = anagrams;
+// Runtime Complexity = O(n * log(n))

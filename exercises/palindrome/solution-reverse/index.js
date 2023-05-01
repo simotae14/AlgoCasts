@@ -15,3 +15,4 @@ function palindrome(str) {
 }
 
 module.exports = palindrome;
+// Runtime Complexity = O(n)

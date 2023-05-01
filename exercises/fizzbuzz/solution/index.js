@@ -31,3 +31,4 @@ function fizzBuzz(n) {
 fizzBuzz(5);
 
 module.exports = fizzBuzz;
+// Runtime Complexity = O(n)

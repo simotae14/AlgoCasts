@@ -26,3 +26,4 @@ function maxChar(str) {
 }
 
 module.exports = maxChar;
+// Runtime Complexity = O(n)

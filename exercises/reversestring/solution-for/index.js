@@ -15,3 +15,5 @@ function reverse(str) {
 }
 
 module.exports = reverse;
+
+// Runtime Complexity = O(n)

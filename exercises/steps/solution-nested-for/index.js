@@ -34,3 +34,5 @@ function steps(n) {
 }
 
 module.exports = steps;
+
+// Runtime Complexity = O(n^2)

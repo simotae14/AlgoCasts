@@ -40,3 +40,4 @@ function pyramid(n, row = 0, level = '') {
 }
 
 module.exports = pyramid;
+// Runtime Complexity = O(n)

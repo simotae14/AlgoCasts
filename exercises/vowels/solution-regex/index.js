@@ -13,3 +13,4 @@ function vowels(str) {
 }
 
 module.exports = vowels;
+// Runtime Complexity = O(n)
