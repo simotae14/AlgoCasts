@@ -86,6 +86,23 @@ class LinkedList {
       this.head = new Node(data);
     }
   }
+
+  getAt(index) {
+    // define the initial vars, the counter e the first node
+    let counter = 0;
+    let node = this.head;
+    while (node) {
+      if (counter === index) {
+        return node;
+      }
+      // increment counter and node
+      counter++;
+      node = node.next;
+    }
+    // if we exit the while loop it means there are no more nodes and we have not reached
+    // the index so we return null
+    return null;
+  }
 }
 
 module.exports = { Node, LinkedList };
