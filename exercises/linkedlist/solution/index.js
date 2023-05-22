@@ -103,6 +103,24 @@ class LinkedList {
     // the index so we return null
     return null;
   }
+
+  removeAt(index) {
+    // check linked list empty
+    if (!this.head) {
+      return;
+    }
+    // if we remove the head element
+    if (index === 0) {
+      this.head = this.head.next;
+      return;
+    }
+    const previous = this.getAt(index - 1);
+    // if previous doesn't exist or previous has not a next node
+    if (!previous || !previous.next) {
+      return;
+    }
+    previous.next = previous.next.next;
+  }
 }
 
 module.exports = { Node, LinkedList };
