@@ -35,13 +35,27 @@ class Tree {
   traverseBF(fn) {
     // add the root element to the temporary array
     const arr = [this.root];
-    // continue untile there are element inside the array
+    // continue until there are elements inside the array
     while (arr.length) {
       // remove the first element from the array
       const node = arr.shift();
       // add all the children of the node element
       arr.push(...node.children);
 
+      fn(node);
+    }
+  }
+
+  traverseDF(fn) {
+    // add the root element to the temporary array
+    const arr = [this.root];
+    // continue until there are elements inside the array
+    while (arr.length) {
+      // remove the first element from the array
+      const node = arr.shift();
+      // add all the children of the node element
+      arr.unshift(...node.children);
+ 
       fn(node);
     }
   }
