@@ -36,7 +36,20 @@ function selectionSort(arr) {
 }
 
 function mergeSort(arr) {
+  // array has one element?
+  if (arr.length === 1) {
+    return arr;
+  }
 
+  // find the center index
+  const center = Math.floor(arr.length / 2);
+  // left part
+  const left = arr.slice(0, center);
+  // right part
+  const right = arr.slice(center);
+
+  // use the two parts inside the call of merge
+  return merge(mergeSort(left), mergeSort(right));
 }
 
 function merge(left, right) {
